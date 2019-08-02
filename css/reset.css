@@ -1,0 +1,26 @@
+body,html,p,h1,h2,table,tr,td,th,h3,h4,h5,h6,a,ul,li,input,form,b,strong,b,i,span{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol,li{
+    list-style: none;
+}
+input,select,textarea,button{
+    outline: none;
+}
+textarea{
+    resize: none;
+}
+.cf{
+    zoom: 1;
+}
+.cf:after{
+    content: '';
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+}
