@@ -384,7 +384,16 @@ html,body{
     top: 0;
     bottom: 0;
     right: 0;;
-   font-size: 16px;
+    font-size: 14px;
+    text-align: center;
+}
+#loginContent>form>div{
+    text-align: left;
+}
+#loginContent>form>div>span{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
 }
 #loginTitle{
     color: #2963ac;
@@ -440,4 +449,11 @@ html,body{
     line-height: 90px;
     color: #fff;
     margin-right: 20px
+}
+
+.zhu{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #2963ac;
 }
