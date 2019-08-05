@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>index-后台管理系统</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 顶部 -->
+<div class="header">
+    <h1><a href="#">logo</a></h1>
+    <div class="top_right">
+        <h3>一帮帅笔的管理系统</h3>
+        <div class="menu">
+            <img src="./images/ni.jpg">
+            <span>你好,帅逼</span>
+        </div>
+    </div>
+</div>
+
+<!-- 左边栏 -->
+<div class="left">
+    <a class="act" href="#">学生列表</a>
+    <a href="#">管理员列表</a>
+    <a href="#">系统管理</a>
+</div>
+
+<!-- 右边内容区 -->
+<div class="right">
+    <!-- 搜索 -->
+    <div class="search">
+        <label>ID ： <input type="text" name="id"></label>
+        <label>名字 ：<input type="text" name="name"></label>
+        <label>年龄 ：<input type="text" name="age"></label>
+        <button>搜索</button>
+    </div>
+
+    <!-- 表格区 -->
+    <div class="box cf">
+        <div class="add">
+            <span>新增</span>
+        </div>
+
+        <!-- 表格 -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="myTbody">
+                
+            </tbody>
+        </table>
+
+        <!-- 分页 -->
+        <div class="fenye">
+            <!-- <span>上一页</span>
+            <span class="act">1</span>
+            <span>下一页</span> -->
+        </div>
+
+    </div>
+
+</div>
+
+<!-- 弹窗 -->
+<div class="mask"></div>
+<!-- 修改 -->
+<div class="edit_open">
+    <input type="hidden" id="editHid">
+    <h3>修改用户信息<span class="close">×</span></h3>
+    <p><span>ID : </span><b id="nid">01</b></p>
+    <p><span>姓名 : </span><input class="ming" type="text" name="name"></p>
+    <p><span>年龄 : </span><input class="nian" type="text" name="age"></p>
+    <!-- <p><span>性别 : </span><input class="xing" type="text" name="sex"></p> -->
+    <p><span>性别 : </span>
+        <select class="xing" name="sex">
+            <option value="1">男</option>
+            <option value="2">女</option>
+        </select>
+    </p>
+    <div class="edit_b">
+        <span class="edit_btn">修改</span>
+        <span class="close">取消</span>
+    </div>
+</div>
+<!-- 删除 -->
+<div class="del_open">
+    <input type="hidden" id="delHid">
+    <h3>是否删除<span class="close">×</span></h3>
+    <div class="del_b">
+        <span class="del_btn">删除</span>
+        <span class="close">取消</span>
+    </div>
+</div>
+<script type="text/javascript" src="./lib/jquery.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,500 @@
+body,html{
+    background: #eee;
+}
+/* 顶部 */
+.header{
+    height:60px;
+    background: #2963ac;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+.header h1{
+    width: 190px;
+    height:60px;
+    background: #114483;
+    text-align: center;
+    line-height:60px;
+    float: left;
+}
+
+.top_right{
+    width: calc(100% - 190px);
+    float: left;
+    height:60px;
+    position: relative;
+}
+.top_right h3{
+    text-align: center;
+    line-height:60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu{
+    position: absolute;
+    right: 35px;
+    font-size: 14px;
+    color: #fff;
+    top: 0;
+    line-height:60px;
+    cursor: pointer;
+}
+.menu img{
+    width: 30px;
+    border-radius: 50%;
+    height: 30px;
+    float: left;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+/* 左边栏 */
+.left{
+    position: fixed;
+    left: 0;
+    top: 60px;
+    background: #434a52;
+    width: 190px;
+    height: calc(100% - 60px);
+    box-sizing: border-box;
+    padding-top: 35px;
+}
+.left a{
+    display: block;
+    line-height: 50px;
+    padding-left: 50px;
+    color: #dfdfdf;
+    font-size: 14px;
+    position: relative;
+}
+.left a:hover{
+    background: #7b7e82;
+}
+.left a.act{
+    background: #7b7e82;
+}
+.left a:after{
+    content: '';
+    display: block;
+    width: 190px;
+    height: 1px;
+    background: #7b7e82;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* 右边内容区 */
+.right{
+    width: calc(100% - 190px);
+    margin-left:190px;
+    padding-top: 60px;
+}
+
+/* 搜索 */
+.search{
+    margin: 35px 35px 0;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 5px 0 9px rgba(0,0,0,0.6);
+    height: 65px;
+}
+.search label{
+    margin: 15px 0 15px 30px;
+    display: inline-block;
+    line-height: 35px;
+    color: #3c3c3c;
+    font-size: 14px;
+    width: 20%;
+}
+.search label input{
+    height: 25px;
+    border: solid 1px #7c7c7c;
+    box-sizing: border-box;
+    padding: 0 5px;
+    width: calc(100% - 50px);
+    border-radius: 3px;
+}
+.search button{
+    width: 70px;
+    height: 25px;
+    cursor: pointer;
+    border: 0;
+    background: #2963ac;
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* 表格区 */
+.box{
+    margin: 35px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 5px 0 9px rgba(0,0,0,0.6);
+    padding: 25px 0;
+}
+.box .add{
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px;
+    background: #2963ac;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.box table{
+    margin: 25px 35px 0;
+    display: block;
+    border-bottom: solid 1px #575757;
+}
+.box table thead{
+    display: block
+}
+.box table thead tr{
+    width: 100%;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    background: #2963ac;
+}
+.box table thead th{
+    width: 20%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: left;
+    color: #fff;
+    position: relative;
+}
+.box table tbody{
+    display: block;
+    width: 100%;
+}
+.box table tbody tr{
+    width: 100%;
+    line-height: 50px;
+    display: block;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: solid 1px #575757;
+}
+.box table tbody tr:nth-child(even){
+    background: #eee;
+}
+.box table tbody tr td{
+    width: 20%;
+    display: block;
+    float: left;
+    position: relative;
+    font-size: 14px;
+    color: #575757;
+}
+.box table tbody tr td:after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #575757;
+}
+.box table tbody tr td span{
+    display: inline-block;
+    padding: 5px 10px;
+    line-height: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.box table tbody tr td span:nth-child(1){
+    background: #2963ac;
+}
+.box table tbody tr td span:nth-child(2){
+    background: red;
+}
+
+.fenye{
+    float: right;
+    margin: 20px 35px 0 0;
+    font-size: 12px;
+}
+.fenye span{
+    padding: 5px 10px;
+    border: solid 1px #777;
+    border-right: 0;
+    float: left;
+    cursor: pointer;
+}
+.fenye span.act{
+    background: #2963AC;
+    border-color: #2963AC;
+    color: #fff;
+}
+.fenye span:last-child{
+    border-right: solid 1px #777;
+}
+
+/* 弹窗 */
+.mask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: none;
+}
+/* 修改 */
+.edit_open{
+    width: 450px;
+    height: 350px;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    border-radius: 5px;
+    display: none;
+}
+.edit_open h3{
+    line-height: 59px;
+    text-align: center;
+    border-bottom: solid 1px #ddd;
+    position: relative;
+}
+.edit_open h3 span{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    bottom: 0;
+    margin: auto 20px;
+    cursor: pointer;
+}
+.edit_open p{
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+.edit_open p span{
+    width: 110px;
+    text-align: right;
+    display: block;
+    float: left;
+}
+.edit_open p b{
+    margin-left: 10px;
+    font-weight: normal;
+}
+.edit_open p input{
+    width: 250px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin-left: 10px;
+    float: left;
+}
+.edit_open p select{
+    width: 250px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin-left: 10px;
+}
+.edit_b{
+    height: 59px;
+    border-top: solid 1px #ddd;
+    margin-top: 30px;
+    text-align: center;
+}
+.edit_b span{
+    display: inline-block;
+    padding: 7px 17px;
+    margin: 13px 35px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.edit_b span:nth-child(1){
+    background: #2963ac;
+}
+.edit_b span:nth-child(2){
+    background: #aaa;
+}
+
+/* 删除 */
+.del_open{
+    width: 250px;
+    height: 120px;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10;
+    border-radius: 5px;
+    display: none;
+}
+.del_open h3{
+    line-height: 59px;
+    text-align: left;
+    border-bottom: solid 1px #ddd;
+    position: relative;
+    padding: 0 20px;
+}
+.del_open h3 span{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    bottom: 0;
+    margin: auto 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.del_b{
+    height: 59px;
+    text-align: center;
+}
+.del_b span{
+    display: inline-block;
+    padding: 7px 17px;
+    margin: 13px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+.del_b span:nth-child(1){
+    background: red;
+}
+.del_b span:nth-child(2){
+    background: #aaa;
+}
+
+/*login*/
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#loginWrap{
+    width: 100%;
+    height: 100%;
+    background: url(../images/login.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+#loginContent{
+    width: 440px;
+    height: 280px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin:auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;;
+    font-size: 14px;
+    text-align: center;
+}
+#loginContent div{
+    text-align: left;
+}
+#loginContent>div>span{
+    display: inline-block;
+    width: 110px;
+    text-align: right;
+}
+#loginContent #loginTitle{
+    color: #2963ac;
+    font-size: 24px;
+    text-align: center;
+    padding: 25px 0;
+    
+}
+#loginContent{
+    text-align: center
+}
+#loginContent input{
+    width: 225px;
+    height: 30px;
+    background: #ededed;
+    padding-left: 5px;
+    border-radius: 5px;
+    margin-bottom: 28px;
+    margin-left: 25px;
+    border: 0;
+}
+#sub{
+    width: 284px;
+    height: 36px;
+    color: #fff;
+    background: #2963ac;
+    border-radius: 5px;
+    box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.5);
+    border: 0;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+#logo{
+    width: 100%;
+    height: 90px;
+    background: #2963ac;
+    position: fixed;
+    top: 0px;
+    display: flex;
+}
+.logoImg a{
+    line-height: 90px;
+    color: #fff;
+    margin: 20px
+}
+.title{
+    color: #fff;
+    font-size: 32px;
+    line-height: 90px;
+    width: 300px;
+    margin: 0 auto;
+}
+.user{
+    line-height: 90px;
+    color: #fff;
+    margin-right: 20px
+}
+
+.zhu{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #2963ac;
+}
